@@ -21,7 +21,7 @@ module.exports = {
             return message.channel.send("Item out of stock");
         }
 
-        if(shop.invetory > 0) {
+        if(shop.inventory > 0) {
             shop.inventory = shop.inventory- - -1;
             shop.save();
         }
